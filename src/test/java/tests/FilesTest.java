@@ -9,6 +9,7 @@ import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.containsString;
 import static utils.Files.readTextFromDocxFile;
 import static utils.Files.getPdf;
 import static utils.Files.getXls;
@@ -30,7 +31,7 @@ public class FilesTest extends TestBase {
     @Test
     void docxTest() throws FileNotFoundException {
         String actualData = readTextFromDocxFile(DOCX_FILE_PATH);
-        assertThat(actualData, equalTo(DOCX_EXPECTED_DATA));
+        assertThat(actualData, containsString(DOCX_EXPECTED_DATA));
     }
 
     @Test
