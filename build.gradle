@@ -13,7 +13,7 @@ def selenideVersion = "5.19.0",
     xlsTest = "1.4.3",
     zip4j = "1.3.2",
     hamcrest = "1.3",
-    poiOoxml = "3.16"
+    poiOoxml = "4.1.2"
 
 allure {
     autoconfigure = true
